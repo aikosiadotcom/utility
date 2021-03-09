@@ -1,0 +1,26 @@
+{
+  "name": "@aikosia/utility",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1kos1a/utility.git"
+  },
+  "author": "aikosia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a1kos1a/utility/issues"
+  },
+  "homepage": "https://github.com/a1kos1a/utility#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "fs-extra": "^9.1.0"
+  }
+}
