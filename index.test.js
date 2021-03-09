@@ -1,5 +1,5 @@
 const { test,expect,describe } = require("@jest/globals");
-const {exists} = require(".");
+const {exists,Logger} = require(".");
 const path = require("path");
 
 describe("check if file or folder exists",()=>{
@@ -17,5 +17,14 @@ describe("check if file or folder exists",()=>{
 
     test("folder not exists",async()=>{
         expect(await exists(path.join(process.cwd(),'node_modules1'))).toBeFalsy();
+    });
+
+    test("log",async()=>{
+        let t = new Logger();
+        t.info({"message":"test"});
+        t.info(1);
+        t.info("a");
+        t.info(["a"]);
+        t.info("a",["c"],{"message":"test"},1,"gabung");
     });
 });
